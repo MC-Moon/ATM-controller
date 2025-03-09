@@ -5,7 +5,6 @@ class ATMController{
     enum Process
     {
         IDLE,
-        INSERT,
         CHECK_BALANCE,
         DEPOSIT,
         WITHDRAWAL,
@@ -19,4 +18,5 @@ class ATMController{
 
     private:
         Process state;
+        Process inputUserSelcet();
 };
