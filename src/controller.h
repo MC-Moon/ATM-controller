@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits>
 #include "bank_api.h"
 
 class ATMController{
@@ -21,6 +22,8 @@ class ATMController{
         int pin_number;
         BankAPI api;
         Process state;
+    private:
         Process inputUserSelcet();
+        unsigned int inputOnlyInteger();
         bool insertCard();
 };
